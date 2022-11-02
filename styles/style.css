@@ -1,3 +1,11 @@
 :root {
   background-color: green;
+}
+
+.barTitle {
+  color: 10, 10, 10, 0.9;
+}
+.barTitle img {
+  width: 100px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
