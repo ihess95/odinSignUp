@@ -73,6 +73,10 @@ body {
       font-family: audiowide, sans-serif;
       font-size: 0.75rem;
     }
+    input {
+      min-width: 150px;
+      max-width: 200px;
+    }
   }
   button {
     padding-top: 5px;
@@ -82,7 +86,11 @@ body {
     background-color: $headerTextColor;
     border: none;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px 3px rgba(5, 4, 31, 0.2);
+  }
+  button:hover {
+    background-color: $headerLinkColor;
+    box-shadow: 3px 3px 10px 3px rgba(5, 4, 31, 0.4);
   }
   p {
     color: $headerTextColor;

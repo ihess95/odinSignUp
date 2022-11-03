@@ -7,8 +7,11 @@
     <title>Odin Sign Up</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" href="./imgs/icon.svg" />
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Audiowide"
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="bodyContainer">
@@ -68,20 +71,28 @@
             type="number"
             name="phoneNumber"
             placeholder="1 (555) 555-5555"
+            maxlength="10"
           />
 
           <label name="password">Password</label>
           <label name="passwordConfirm"> Confirm Password</label>
 
-          <input type="password" name="password" minlength="8" required />
           <input
             type="password"
+            id="pw"
+            name="password"
+            minlength="8"
+            required
+          />
+          <input
+            type="password"
+            id="pwc"
             name="passwordConfirm"
             minlength="8"
             required
           />
         </form>
-        <button type="submit" form="signUp">Submit</button>
+        <button type="submit" form="signUp" id="submit">Submit</button>
         <p>Already have an account? <a href="login.html">Log in</a></p>
       </div>
     </div>
