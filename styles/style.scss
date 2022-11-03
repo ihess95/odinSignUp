@@ -79,6 +79,8 @@ body {
     }
   }
   button {
+    min-width: 125px;
+    max-width: 200px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 40px;
