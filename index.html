@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Sign Up</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./imgs/icon.svg" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Audiowide"
   </head>
   <body>
     <div class="bodyContainer">
@@ -32,8 +35,10 @@
         </p>
         <p>You <em>knoooow</em> you want to!</p>
         <h3>Get started:</h3>
-        <form>
+        <form id="signUp">
           <label name="firstName">First Name</label>
+          <label name="lastName">Last Name</label>
+
           <input
             type="text"
             name="firstName"
@@ -41,7 +46,7 @@
             maxlength="15"
             required
           />
-          <label name="lastName">Last Name</label>
+
           <input
             type="text"
             name="lastName"
@@ -49,30 +54,35 @@
             maxlength="15"
             required
           />
+
           <label name="email">Email</label>
+          <label name="phoneNumber">Phone Number</label>
           <input
             type="email"
             name="email"
             placeholder="ian.h.hess@gmail.com"
             required
           />
-          <label name="phoneNumber">Phone Number</label>
+
           <input
             type="number"
             name="phoneNumber"
             placeholder="1 (555) 555-5555"
           />
+
           <label name="password">Password</label>
-          <input type="password" name="password" minlength="8" required />
           <label name="passwordConfirm"> Confirm Password</label>
+
+          <input type="password" name="password" minlength="8" required />
           <input
             type="password"
             name="passwordConfirm"
             minlength="8"
             required
           />
-          <button type="submit">Submit</button>
         </form>
+        <button type="submit" form="signUp">Submit</button>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
       </div>
     </div>
   </body>
