@@ -76,6 +76,8 @@ body {
 .rightBar form input {
   min-width: 150px;
   max-width: 200px;
+  border-radius: 7px;
+  border: none;
 }
 .rightBar button {
   min-width: 125px;
