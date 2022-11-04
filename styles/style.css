@@ -73,11 +73,17 @@ body {
   font-family: audiowide, sans-serif;
   font-size: 0.75rem;
 }
-.rightBar form input {
+.rightBar form input,
+.rightBar form textarea {
   min-width: 150px;
-  max-width: 200px;
   border-radius: 7px;
   border: none;
+}
+.rightBar form input {
+  max-width: 200px;
+}
+.rightBar form textarea {
+  grid-area: 7/1/10/3;
 }
 .rightBar button {
   min-width: 125px;

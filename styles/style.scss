@@ -73,11 +73,17 @@ body {
       font-family: audiowide, sans-serif;
       font-size: 0.75rem;
     }
-    input {
+    input,
+    textarea {
       min-width: 150px;
-      max-width: 200px;
       border-radius: 7px;
       border: none;
+    }
+    input {
+      max-width: 200px;
+    }
+    textarea {
+      grid-area: 7/1/10/3;
     }
   }
   button {
